@@ -1,0 +1,33 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "airbnb-base"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {
+      "import/extensions": 0,
+      "object-curly-newline": "off",
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ],
+      "arrow-parens": [
+        "error",
+        "as-needed",
+        {
+          "requireForBlockBody": false
+        }
+      ],
+      "no-param-reassign": 0
+    }
+}
