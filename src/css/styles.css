@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+@font-face {
+    font-family: 'Dosis', sans-serif;
+}
+
+:root {
+    --max-width: 360px;
+    --text-color: #000000;
+    --bg-color: #90f083;
+    --bg-beer: #a9dd65;
+    --color-1: #90e658;
+    --color-2: #7cb466;
+    --button-color: #3acf0c;
+    --button-color-hov: #90f083;
+    --bg-main-color: #ffffff;
+}
+
+* {
+    font-family: Dosis;
+    color: var(--text-color);
+}
+
+body {
+    background-color: #000000;
+    max-width: var(--max-width);
+    margin-left: calc((103vw - var(--max-width))/2);
+    margin-right: calc((103vw - var(--max-width))/2);
+}
+
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    background-color: #90f083;
+}
+
+main h1 {
+    margin: 0;
+}
+
+main h2 {
+    margin: 0;
+}
+
+.social {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 0rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    background-color: #7cb466;
+    padding: 0 1rem 0 1rem;
+}
+
+.item-form text-date start {
+    color: white;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media all and (min-width: 768px) {
+     :root {
+        --max-width: 768px;
+    }
+}
+
+@media all and (min-width: 1280px) {
+     :root {
+        --max-width: 1280px;
+    }
+}

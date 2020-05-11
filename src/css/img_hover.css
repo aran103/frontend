@@ -1,0 +1,99 @@
+.beer-header {
+    text-align: center;
+}
+
+.beer-content-image {
+    position: relative;
+}
+
+.beer-content-image>img {
+    max-height: 100px;
+    max-width: 50%;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+.beer-content-image>figcaption {
+    background-color: rgba(25, 25, 25, 0.7);
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    font-size: 37%;
+    visibility: visible;
+    padding: 1em;
+}
+
+.beer-content-image>figcaption>a>article {
+    display: none;
+}
+
+.beer-content-image>figcaption a,
+.beer-content-image>figcaption a:visited {
+    text-decoration: none;
+    text-shadow: 0.05em 0.05em rgb(252, 198, 98)
+}
+
+.beer-content-image h2 {
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+}
+
+@media all and (min-width: 768px) {
+    .beer-content-image>img {
+        max-height: 350px;
+    }
+}
+
+@media all and (min-width: 1280px) {
+    .beer-content-image>figcaption {
+        display: initial;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .beer-content-image>figcaption>a>article {
+        display: initial;
+    }
+    .beer-content-image:hover {
+        z-index: 1;
+    }
+    .beer-content-image:hover>img {
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        transform: rotate(180deg);
+        -webkit-transition: all 900ms ease-in-out;
+        -moz-transition: all 900ms ease-in-out;
+        -ms-transition: all 900ms ease-in-out;
+        -o-transition: all 900ms ease-in-out;
+    }
+    .beer-content-image:hover>figcaption {
+        background-color: rgba(25, 25, 25, 0.7);
+        position: absolute;
+        top: 40%;
+        left: -35%;
+        width: 100%;
+        font-size: 70%;
+        visibility: visible;
+        opacity: 1;
+        padding: 1em;
+        -webkit-transition: background-color, opacity 1500ms ease-in-out;
+        -moz-transition: background-color, opacity 1500ms ease-in-out;
+        -ms-transition: background-color, opacity 1500ms ease-in-out;
+        -o-transition: background-color, opacity 1500ms ease-in-out;
+    }
+    .beer-content-image h2 {
+        font-weight: bold;
+    }
+    h3>span {
+        font-weight: normal;
+    }
+    p>span {
+        font-weight: bold;
+    }
+    .beer-content-image p,
+    .beer-content-image h3 {
+        margin: 0;
+    }
+}

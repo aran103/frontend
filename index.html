@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+    <title>BeerFlix</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/navbar.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/grid.css">
+    <link rel="stylesheet" href="/src/css/detail.css">
+    <link rel="stylesheet" href="/src/css/quotes.css">
+    <link rel="stylesheet" href="/src/css/img_hover.css">
+    <link rel="stylesheet" href="/src/css/flaticon_social.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+    <link rel="stylesheet" href="/src/css/loader.css">
+
+
+</head>
+
+<body>
+
+    <nav id="navbar" class="menu">
+
+        <div class="navbar-logo">
+            <a href="/"></a>
+        </div>
+
+        <form id="search" class="filter-input" novalidate>
+
+
+            <input class="item-form text-date" type="date" id="start" name="beer-start" value="2003-07-22">
+            <input class="item-form" id="search-input" data-pattern-mismatch="Input invalid" required placeholder="Busca tu cerveza" type="text">
+            <label class="item-form align-right yellow" for="end">Fecha Fin:</label>
+            <input class="item-form text-date" type="date" id="end" name="beer-end" value="2012-07-22">
+            <button class="item-form button" type="submit">Filtrar</button>
+        </form>
+
+    </nav>
+
+
+    <header class="header">
+        <p>Beer</p>
+    </header>
+
+
+
+
+    <main>
+
+    </main>
+
+    <aside class="social">
+
+        <section id="quotesSection" class="quotes-section">
+
+        </section>
+
+    </aside>
+
+
+    <footer class="footer">
+        <aside class="description">
+            <p>Catalogos de cervezas SA</p>
+        </aside>
+
+    </footer>
+
+
+
+
+    <div id="loader" class="loader-container hide">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="/src/js/routes.js"></script>
+    <script type="module" src="/src/js/navbar.js"></script>
+
+
+</body>
+
+</html>

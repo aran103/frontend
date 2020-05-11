@@ -1,0 +1,173 @@
+.asideBar {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-gap: 0rem;
+    align-content: center;
+    background-color:var(--button-color);
+    border-radius: 8px;
+
+}
+
+.likesButton {
+    background-image: url(/src/img/me_gusta_before.png);
+
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover; 
+
+    flex-direction: column;
+    justify-content: center;
+
+    width: 2rem;
+    height: 2rem;
+    margin: 0;
+
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.likesButton:hover {
+    background-image: url(/src/img/me_gusta.png);
+
+}
+
+
+.asideBarItem {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    
+}
+
+.likesForm {
+    text-align: center;
+}
+
+#likesList {
+    display: inline;
+}
+
+.likes-item {
+    display: inline;
+}
+
+#testList {
+    display: inline;
+}
+
+#inline {
+    display: inline;
+}
+
+.test-item {
+    display: inline;
+}
+
+.list-item  {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+    grid-gap: 0rem;
+    font-size: small;
+}
+
+.list-item #quote-header  {
+    font-weight: 800;
+}
+
+.list-item p  {
+    margin: .4rem 0 0 0;
+    text-align: justify;
+}
+
+
+
+#quote-header {
+    margin: .6rem 0 0 0;
+}
+
+#input-quote {
+    margin: .4rem 0 0 0;
+}
+
+
+
+.quoteForm {
+    margin: .6rem 0 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+}
+
+.quote-input {
+    justify-self: center;
+}
+
+.quote-input .button {
+    background-color: var(--button-color); 
+    border-radius: 4px;
+    border: 1px solid var(--button-color);
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+.quote-input .button:hover {
+    border-color:var(--button-color-hov); 
+    background-color: var(--button-color-hov); 
+} 
+
+
+/*MEDIA QUERIES*/
+
+@media all and (min-width: 768px) {
+    .asideBar {
+        font-size: 1rem;
+    }
+
+    .list-item  {
+        font-size: 1rem;
+    }
+
+    .quote-input  {
+        margin-top: 1.2rem;
+        font-size: 1rem;
+    }
+
+    #input-quote {
+        font-size: .8rem;
+    }
+
+    .button {
+        font-size: .8rem;
+    }
+
+}
+
+@media all and (min-width: 1280px) {
+
+    .asideBar {
+        font-size: 1.5rem;
+    }
+
+    .list-item  {
+        font-size: 1.5rem;
+    }
+
+    .quote-input  {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    #input-quote {
+        font-size: 1.2rem;
+    }
+
+    .button {
+        font-size: 1.2rem;
+    }
+
+
+}

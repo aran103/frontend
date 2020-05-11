@@ -1,0 +1,77 @@
+.detail-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 0rem;
+    padding: 0 1rem 0 1rem;
+    justify-items: center;
+    align-items: center;
+    grid-auto-flow: dense;
+}
+
+.beer-title-section h1 {
+    padding: .5rem 0 .5rem 0;
+    font-size: larger;
+}
+
+.beer-content-left {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-size: medium;
+}
+
+.beer-content-right {
+    text-align: left;
+    font-size: small;
+}
+
+.beer-content-right p {
+    margin: .4rem 0 0 0;
+}
+
+.beer-content-right span {
+    font-weight: 800;
+}
+
+.beer-content-right .parrafo {
+    text-align: justify;
+}
+
+.beer-content-right ul {
+    padding-left: 1rem;
+}
+
+.beer-content-right .ingredients {
+    font-size: smaller;
+}
+
+.beer-content-right>a {
+    text-align: center;
+    text-decoration-line: none;
+}
+
+@media all and (min-width: 768px) {
+    .detail-section {
+        padding: 0 3rem 0 3rem;
+    }
+    .beer-title-section h1 {
+        padding: 1rem 0 1rem 0;
+        font-size: 2.2rem;
+    }
+    .beer-content-right {
+        font-size: 1rem;
+    }
+}
+
+@media all and (min-width: 1280px) {
+    .beer-title-section h1 {
+        padding: 1rem 0 1rem 0;
+        font-size: 3rem;
+    }
+    .beer-content-right {
+        font-size: 1.5rem;
+    }
+}
